@@ -1,9 +1,9 @@
-body{
-    margin: 0;
-    border: 0;
-    top: 0;
-    background-color: black;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  border: 0;
+  top: 0;
+  background-color: black;
+  overflow-x: hidden;
 }
 /* .back {
     background-size: 100% 50%;
@@ -11,49 +11,49 @@ body{
     background-image: url(image/fon.png);
     background-image: url(image/fonsite.mp4);
 } */
- .back {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+.back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 .back video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
-.firstblock{
-    display: inline;
-    width: 100px;
-    height: 30px;
-    margin: 0;
-    border: 0;
-    top: 0;
+.firstblock {
+  display: inline;
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  border: 0;
+  top: 0;
 }
-.maintext{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 70px 0;
-    border: 0;
-    top: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 110px;
-    color: transparent;
-    background-clip: text;
-    color: wheat;
-    animation: slidein 6s linear infinite;
-    animation-delay: 0ms;
-    padding: 0 5% 0 0;
-    white-space: nowrap;
-    overflow: hidden;
+.maintext {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 70px 0;
+  border: 0;
+  top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 110px;
+  color: transparent;
+  background-clip: text;
+  color: wheat;
+  animation: slidein 6s linear infinite;
+  animation-delay: 0ms;
+  padding: 0 5% 0 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @keyframes slidein {
   from {
@@ -61,11 +61,11 @@ body{
     transform: translateX(100%);
   }
   to {
-    width: 100%;  
+    width: 100%;
     transform: translateX(-100%);
   }
 }
-.block3{
+.block3 {
   display: flex;
   width: 100%;
   height: 500px;
@@ -118,99 +118,207 @@ body{
   border-radius: 70px;
 } */
 .text3 {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    margin: 7% 5% 0;
-    justify-content: center;
-    background-image: linear-gradient(90deg, rgba(149, 152, 61, 1) 0%, rgba(150, 247, 59, 1) 50%, rgba(227, 207, 25, 1) 100%);
-    border-radius: 70px;
-    color: white;
-    position: relative; /* Добавляем для позиционирования дочерних элементов */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0% 3% 0;
+  /* justify-content: center; */
+  background-image: linear-gradient(
+    90deg,
+    rgba(149, 152, 61, 1) 0%,
+    rgba(150, 247, 59, 1) 50%,
+    rgba(227, 207, 25, 1) 100%
+  );
+  border-radius: 70px;
+  color: white;
+  position: relative;
 }
 
 .textin3 {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    margin: 0;
-    padding: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    color: white;
-    position: absolute; /* Чтобы элементы были поверх друг друга */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: rgba(241, 237, 237, 0.841);
+  position: absolute; /* Чтобы элементы были поверх друг друга */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: 19px;
 }
 
 .textin31 {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    padding: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    color: white;
-    position: absolute; /* Чтобы элементы были поверх друг друга */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    margin: 0;
-    text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  color: rgba(241, 237, 237, 0.841);
+  position: absolute; /* Чтобы элементы были поверх друг друга */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  font-size: 21px;
 }
 
 .text3:hover .textin31 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .text3:hover .textin3 {
-    opacity: 1;
-    margin: 0; /* Убираем лишние отступы */
-    box-shadow: 0 0 3em rgb(227, 239, 2);
-    border-radius: 70px;
+  opacity: 1;
+  margin: 0; /* Убираем лишние отступы */
+  box-shadow: 0 0 3em rgb(227, 239, 2);
+  border-radius: 70px;
 }
 
-.blockpic3{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0 5%;
-    justify-content: center;
+.blockpic3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 3% 0 0;
+  justify-content: space-evenly;
 }
-.pic3{
-    width: 400px;
-    height: 100%;
-    margin: 0 5%;
-    display: flex;
-    border-radius: 5%;
+.pic3 {
+  width: 400px;
+  height: 500px;
+  margin: 0 0;
+  display: flex;
+  border-radius: 5%;
 }
-.leftpic{
-    box-shadow:
-  -1em 0 3em rgb(126, 126, 15);
+.leftpic {
+  box-shadow: -1em 0 3em rgb(126, 126, 15);
 }
-.rightpic{
-    box-shadow:
-  1em 0 3em rgb(126, 126, 15);
+.rightpic {
+  box-shadow: 1em 0 3em rgb(126, 126, 15);
 }
-.present{
+
+.slider-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px; /* Добавлено ограничение максимальной ширины */
+  height: 800px;
+  margin: 40px auto; /* Центрирование и отступ сверху */
+  padding: 0;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Важно для правильного расчета размеров */
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; /* Добавлено для учета padding в общей ширине */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.control-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.control-btn.active {
+  background: #007bff;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 10;
+  box-sizing: border-box; /* Добавлено */
+}
+
+.nav-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.present {
   display: flex;
   width: 100%;
   height: 150px;
-  margin: 7% 0 ;
+  margin: 7% 0;
+  padding: 0%;
+  border: 0;
   justify-content: center;
 }
-.buttonPresent{
+.buttonPresent {
   display: flex;
   width: 60%;
   align-items: center;
@@ -218,25 +326,29 @@ body{
   padding: 0;
 
   justify-content: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-style: normal;
   color: white;
   font-size: 50px;
-  background-image: linear-gradient(90deg,rgba(149, 152, 61, 1) 0%, rgba(150, 247, 59, 1) 50%, rgba(227, 207, 25, 1) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(149, 152, 61, 1) 0%,
+    rgba(150, 247, 59, 1) 50%,
+    rgba(227, 207, 25, 1) 100%
+  );
   text-decoration: none;
   border-radius: 70px;
   transition: all 0.3s ease;
-
 }
 .buttonPresent:hover {
   font-size: 51px;
   box-shadow: 0 0 2em rgba(227, 239, 2, 0.8);
 }
-.tag{
+.tag {
   display: flex;
   justify-content: right;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-style: normal;
   color: rgb(20, 5, 5);
